@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>announcement</title>
+    <link rel="stylesheet" href="./css/announcement.css" />
+  </head>
+  <body>
+    <header>
+      <div class="Navigation">
+        <div class="menu">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">&#9776;메뉴</button>
+            <ul id="myDropdown" class="dropdown-content">
+              <li><a href="./Roomize_main.html">홈</a></li>
+              <li><a href="./announcement.html">공지사항</a></li>
+              <li><a href="./list.html">문의하기</a></li>
+            </ul>
+          </div>
+          <div class="logo">
+            <img src="./img/logo removed- file3.png" alt="" />
+            <h2>Roomize</h2>
+          </div>
+        </div>
+        <nav>
+          <div class="con">
+            <ul>
+              <li>
+                <a href="./Roomize_Company_info.html"><span>회사정보</span></a>
+              </li>
+              <li>
+                <a href="./items.html"><span>가구</span></a>
+              </li>
+            </ul>
+            <li id="auth-links">
+              <a
+                class="login"
+                href="./login-screen copy/login.html"
+                id="auth-link"
+                ><span>로그인</span></a
+              >
+            </li>
+
+            <!-- Logged-in view -->
+            <li id="profile-section" style="display: none">
+              <img id="profile-pic" src="" alt="Profile Picture" />
+              <span id="user-greeting"></span>
+              <button
+                id="logout-btn"
+                style="
+                  padding: 6px 12px;
+                  font-weight: bold;
+                  border-radius: 5px;
+                  cursor: pointer;
+                "
+              >
+                로그아웃
+              </button>
+            </li>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <h1>공지사항</h1>
+      <div class="tag">
+        <a href="./Roomize_main.html" class="root">홈</a>
+        <img src="./img/image (3).png" alt="arrow" />
+        <a href="./announcement.html" class="root">공지사항</a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th id="day">NO</th>
+            <th>제목</th>
+            <th>날짜</th>
+            <th>조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <a
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+                href="#"
+                class="announcement"
+                >시스템 개선 및 서비스 점검 안내</a
+              >
+              <div class="content">
+                <p>
+                  <시스템 개선 및 서비스 점검 안내> 안녕하세요. 루마이즈입니다.
+                  <br />보다 나은 서비스를 제공해 드리고자 시스템 점검 작업을
+                  진행합니다. <br />일자 및 시간 : 2023년 8월 10일(목) 00:00 ~
+                  03:00 (3시간) <br />대상 서비스 : 루마이즈 홈페이지 해당 점검
+                  시간 중<br />
+                  서비스 이용이 제한되는 점 양해 부탁드립니다. 감사합니다.
+                </p>
+              </div>
+            </td>
+            <td>2025-07-10</td>
+            <td>1023</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              <a
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+                href="#"
+                class="announcement"
+                >개인정보처리방침 안내</a
+              >
+              <div class="content">
+                <p>
+                  <이용약관> <br>1. 온라인 스토어의 이용은 연중무휴 1일 24시간을
+                  원칙으로 합니다. <br> 다만, 회사의 업무나 기술상의 이유로 <br>온라인
+                  스토어 서비스가 일시 중지될 수 있고, 운영상의 목적으로 회사가
+                  정한 기간에는 온라인 스토어 서비스가 일시 중지될 수 있습니다.
+                  <br>이 때 회사는 미리 해당 내용을 공지하며, 합리적인 사유가 있는
+                  경우에는 사후에 통보할 수 있습니다. <br> 2. 회사는 온라인 스토어
+                  서비스를 일정 범위로 나누어 범위별로 <br>이용할 수 있는 시간을
+                  정할 수 있으며, 이 경우 그 내용을 공지합니다. <br> 3. 회사는 상품
+                  등의 품절 또는 사양의 변경 등의 경우에는 상품 등을 <br>제한 또는
+                  변경할 수 있습니다. <br>
+                </p>
+                <p class="and">다만, 회사의 고의 또는 과실이 없는 경우에는 그러지 아니합니다.</p>
+              </div>
+            </td>
+
+            <td>2025-07-01</td>
+            <td>876</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              <a
+                type="button"
+                class="collapsible"
+                onclick="collapse(this);"
+                href="#"
+                class="announcement"
+                >이용약관 안내</a
+              >
+              <div class="content">
+                <p>
+                  회사는 이용자의 개인정보를 중요시하며,<br> 정보통신망 이용촉진 및 정보보호 등에 관한 법률,
+                  개인정보보호법 등<br> 국내의 개인정보 보호에 관한 법률을 준수하고 있습니다. <br>
+                  회사는 이용자의 권리를 적극적으로 보장하기 위해 개인정보 처리방침을<br> 알기 쉽게 제공할 수 있도록
+                  노력을 기울이고 있으며 이용자의 권리를 <br>적극적으로 보장하기 위해 관련 정보를 알기 쉽게 제공합니다.
+                </p>
+              </div>
+            </td>
+            <td>2025-06-25</td>
+            <td>754</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+      <p>© 2025 Roomize Inc. | sdh250102@sdh.hs.kr & sdh250306@sdh.hs.kr</p>
+    </footer>
+    <script src="./script/announcement.js"></script>
+    <script src="./script/Roomize_main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./header.css">
+</head>
+<body>
+  <header>
+    <div class="Navigation">
+        <div class="menu">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">&#9776;메뉴</button>
+                <ul id="myDropdown" class="dropdown-content">
+                    <li><a href="http://127.0.0.1:5500/Roomize_main.html">홈</a></li>
+                    <li><a href="http://127.0.0.1:5500/announcement.html">공지사항</a></li>
+                    <li><a href="http://127.0.0.1:5500/list.html">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="./img/logo removed- file3.png" alt="">
+                <h2>Roomize</h2>
+            </div>
+        </div>
+        <nav>
+            <div class="con">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/Roomize_Company_info.html"><span>회사정보</span></a></li>
+                    <li><a href="http://127.0.0.1:5500/items.html"><span>가구</span></a></li>
+                </ul> 
+                    <li id="auth-links">
+                        <a class="login" href="http://127.0.0.1:5500/login-screen%20copy/login.html" id="auth-link"><span>로그인</span></a>
+
+                    </li>
+                
+                    <!-- Logged-in view --> 
+                    <li id="profile-section" style="display: none;">
+                        <img id="profile-pic" src="" alt="Profile Picture">
+                        <span id="user-greeting"></span>
+                        <button id="logout-btn" style="padding: 6px 12px; font-weight: bold; border-radius: 5px; cursor: pointer;">로그아웃</button>
+                    </li>
+            </div>
+        </nav>
+        
+    </div>
+
+</header>
+  <h1>Room Generator</h1>
+  <form id="promptForm">
+    <input type="text" id="promptInput" placeholder="Describe your room..." size="40" required />
+    <button type="submit">Generate</button>
+  </form>
+  <div id="status"></div>
+  <canvas id="roomCanvas" width="600" height="600">
+    <img src="./images/다운로드-Photoroom.png" alt="">
+  </canvas>
+  <button class="shop-btn"><a href="/items.html ">Shop</a></button>
+  <script type="module" src="app.js"></script>
+  <script src="dropdown.js"></script>
+  <script src="/script/Roomize_main.js"></script>
+</body>
+</html>

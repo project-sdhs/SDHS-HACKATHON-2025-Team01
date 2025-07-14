@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/items.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+        <header>
+            <div class="Navigation">
+                <div class="menu">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">&#9776;메뉴</button>
+                        <ul id="myDropdown" class="dropdown-content">
+                            <li><a href="./Roomize_main.html">홈</a></li>
+                            <li><a href="./announcement.html">공지사항</a></li>
+                            <li><a href="./list.html">문의하기</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/logo removed- file3.png" alt="">
+                        <h2>Roomize</h2>
+                    </div>
+                </div>
+                <nav>
+                    <div class="con">
+                        <ul>
+                            <li><a href="./Roomize_Company_info.html"><span>회사정보</span></a></li>
+                            <li><a href="./items.html"><span>가구</span></a></li>
+                        </ul> 
+                            <li id="auth-links">
+                                <a class="login" href="./login-screen copy/login.html" id="auth-link"><span>로그인</span></a>
+        
+                            </li>
+                        
+                            <!-- Logged-in view -->
+                            <li id="profile-section" style="display: none;">
+                                <img id="profile-pic" src="" alt="Profile Picture">
+                                <span id="user-greeting"></span>
+                                <button id="logout-btn" style="padding: 6px 12px; font-weight: bold; border-radius: 5px; cursor: pointer;">로그아웃</button>
+                            </li>
+                    </div>
+                </nav>
+                
+            </div>
+
+        </header>
+
+      <section>
+        <div class="input_box">
+          <input type="text" placeholder="가구 검색하기" id="keyword" />
+          <div class="button" onclick="button()">
+            <img src="./img/이거다 찐찐 돋보기.png" alt="" />
+          </div>
+        </div>
+
+        <div class="item_box">
+          <div class="items_1">
+            <div class="img_1">
+              <a href="./buying_33.html"
+                ><img src="./img/가구33.webp" alt="화장대"
+              /></a>
+              <p>#기타/악세사리 가구</p>
+              <span>뷰티의 신 샤라랄 화이트 화장대 </span>
+              <strong>31,500원</strong>
+              <div class="box_box">
+                <p>★4.2</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_2.html"
+                ><img src="./img/가구2.webp" alt="옷장"
+              /></a>
+              <p>#수납 가구</p>
+              <span>심플 화려한 화이트 수납형 옷장</span>
+              <strong>110,000원</strong>
+              <div class="box_box">
+                <p>★4.9</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_3.html"
+                ><img src="./img/가구3.webp" alt="식탁"
+              /></a>
+              <p>#주방/식탁 가구</p>
+              <span>온 식구가 다같이 즐거운 식탁</span>
+              <strong>78,000원</strong>
+              <div class="box_box">
+                <p>★4.8</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_4.html"
+                ><img src="./img/가구4.webp" alt="서랍"
+              /></a>
+              <p>#수납 가구</p>
+              <span>깔끔하고 심플한 화이트 수납형..</span>
+              <strong>35,000원</strong>
+              <div class="box_box">
+                <p>★4.5</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_5.html"
+                ><img src="./img/가구5.webp" alt="의자"
+              /></a>
+              <p>#서재/사무용 가구</p>
+              <span>폭신폭신 앉으면 기절하는 의자 </span>
+              <strong>55,000원 </strong>
+              <div class="box_box">
+                <p>★4.0</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+
+            <div class="img_1">
+              <a href="./buying_6.html"
+                ><img src="./img/가구6.webp" alt="의자"
+              /></a>
+              <p>#서재/사무용 가구</p>
+              <span>포근해보이는 그레이 부들 의자</span>
+              <strong>38,000원 </strong>
+              <div class="box_box">
+                <p>★4.8</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_7.html"
+                ><img src="./img/가구7.webp" alt="옷장"
+              /></a>
+              <p>#수납 가구</p>
+              <span>심플하고 깔끔한 화이트 옷장</span>
+              <strong>125,400원</strong>
+              <div class="box_box">
+                <p>★4.7</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_8.html"
+                ><img src="./img/가구8.webp" alt="침대"
+              /></a>
+              <p>#침실 가구</p>
+              <span>어린이들이 모두 원하는 상상 침대</span>
+              <strong>81,000원</strong>
+              <div class="box_box">
+                <p>★4.4</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_9.html"
+                ><img src="./img/가구9.webp" alt="의자"
+              /></a>
+              <p>#서재/사무용 가구</p>
+              <span>사무용 깔끔 심플 그레이 의자</span>
+              <strong>26,000원</strong>
+              <div class="box_box">
+                <p>★4.9</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_10.html"
+                ><img src="./img/가구10.webp" alt="티비"
+              /></a>
+              <p>#거실 가구</p>
+              <span>엄청 큰 38인치 대형 TV</span>
+              <strong>578,500원</strong>
+              <div class="box_box">
+                <p>★4.3</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+
+            <div class="img_1">
+              <a href="./buying_11.html"
+                ><img src="./img/가구11.webp" alt="소파"
+              /></a>
+              <p>#거실 가구</p>
+              <span>온가족이 다같이 앉는 포근 소파</span>
+              <strong>110,300원 </strong>
+              <div class="box_box">
+                <p>★4.8</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_12.html"
+                ><img src="./img/가구12.webp" alt="서랍"
+              /></a>
+              <p>#수납 가구</p>
+              <span>빈티지 느낌 깔끔한 나무로 된 서랍</span>
+              <strong>42,000원 </strong>
+              <div class="box_box">
+                <p>★4.7</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_13.html"
+                ><img src="./img/가구13.webp" alt="책상"
+              /></a>
+              <p>#서재/사무용 가구</p>
+              <span>공부가 팍팍 되는 책상</span>
+              <strong>93,000원 </strong>
+              <div class="box_box">
+                <p>★4.1</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_14.html"
+                ><img src="./img/가구14.webp" alt="화장대"
+              /></a>
+              <p>#기타/악세사리 가구</p>
+              <span>여기서 꾸미면 내가 장원영? 화장대</span>
+              <strong>73,000원</strong>
+              <div class="box_box">
+                <p>★4.9</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_1.html"
+                ><img src="./img/가구1.webp" alt="침대"
+              /></a>
+              <p>#침실 가구</p>
+              <span>포근포근 푹신 브라운 계열 침대 </span>
+              <strong>353,000원 </strong>
+              <div class="box_box">
+                <p>★4.2</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+
+            <div class="img_1">
+              <a href="./buying_16.html"
+                ><img src="./img/가구16.webp" alt="식탁"
+              /></a>
+              <p>#주방/식탁 가구</p>
+              <span>누구나 원하는 심플 뽕작 식탁</span>
+              <strong>58,000원 </strong>
+              <div class="box_box">
+                <p>★4.6</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_17.html"
+                ><img src="./img/가구17.webp" alt="옷장"
+              /></a>
+              <p>#수납 가구</p>
+              <span>쏙쏙 다 들어가 거대형 옷장</span>
+              <strong>128,000원</strong>
+              <div class="box_box">
+                <p>★4.5</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_18.html"
+                ><img src="./img/가구18.webp" alt="소파"
+              /></a>
+              <p>#거실 가구</p>
+              <span>여인과 함께 하는 포근 달콤 소파</span>
+              <strong>79,000원 </strong>
+              <div class="box_box">
+                <p>★4.8</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_32.html"
+                ><img src="./img/가구32.webp" alt="티비"
+              /></a>
+              <p>#거실 가구</p>
+              <span>엄청 커다란 가족용 빅TV</span>
+              <strong>670,000원 </strong>
+              <div class="box_box">
+                <p>★4.3</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_20.html"
+                ><img src="./img/가구20.webp" alt="옷장"
+              /></a>
+              <p>#수납 가구</p>
+              <span>편리하고 심플한 화이트 옷장</span>
+              <strong>93,000원</strong>
+              <div class="box_box">
+                <p>★4.9</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+
+            <div class="img_1">
+              <a href="./buying_21.html"
+                ><img src="./img/가구21.webp" alt="침대"
+              /></a>
+              <p>#침실 가구</p>
+              <span>아늑하고 따스한 포근 침대</span>
+              <strong>23,0000원 </strong>
+              <div class="box_box">
+                <p>★4.7</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_22.html"
+                ><img src="./img/가구22.webp" alt="침대"
+              /></a>
+              <p>#침실 가구</p>
+              <span>넓고 편리한 나무형 침대 </span>
+              <strong>34,0000원 </strong>
+              <div class="box_box">
+                <p>★4.4</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_31.html"
+                ><img src="./img/가구31.webp" alt="서랍"
+              /></a>
+              <p>#기타/악세사리 가구</p>
+              <span>귀엽고 편리한 화이트 화장대</span>
+              <strong>62,000원 </strong>
+              <div class="box_box">
+                <p>★4.9</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_24.html"
+                ><img src="./img/가구24.webp" alt="화장대"
+              /></a>
+              <p>#기타/악세사리 가구</p>
+              <span>화장품이 쏙쏙 다 들어가! 화장대</span>
+              <strong>45,000원 </strong>
+              <div class="box_box">
+                <p>★4.6</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_25.html"
+                ><img src="./img/가구25.webp" alt="옷장"
+              /></a>
+              <p>#수납 가구</p>
+              <span>편리한 미닫이 화이트 컬러 옷장</span>
+              <strong>88,000원 </strong>
+              <div class="box_box">
+                <p>★4.8</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+
+            <div class="img_1">
+              <a href="./buying_26.html"
+                ><img src="./img/가구26.webp" alt="서랍"
+              /></a>
+              <p>#수납 가구</p>
+              <span>수납공간이 풍부한 화이트 서랍</span>
+              <strong>181,000원 </strong>
+              <div class="box_box">
+                <p>★4.3</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_27.html"
+                ><img src="./img/가구27.webp" alt="소파"
+              /></a>
+              <p>#거실 가구</p>
+              <span>편리하고 심플한 화이트 거실 소파</span>
+              <strong>278,000원 </strong>
+              <div class="box_box">
+                <p>★4.1</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_28.html"
+                ><img src="./img/가구28.webp" alt="의자"
+              /></a>
+              <p>#서재/사무용 가구</p>
+              <span>캠프 느끼나는 아늑한 폭신 의자</span>
+              <strong>18,000원 </strong>
+              <div class="box_box">
+                <p>★4.2</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_29.html"
+                ><img src="./img/가구29.webp" alt="식탁"
+              /></a>
+              <p>#주방/식탁 가구</p>
+              <span>인테리어용 깔끔 나무 테이블</span>
+              <strong>25,000원 </strong>
+              <div class="box_box">
+                <p>★4.8</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+            <div class="img_1">
+              <a href="./buying_30.html"
+                ><img src="./img/가구30.webp" alt="책상"
+              /></a>
+              <p>#서재/사무용 가구</p>
+              <span>이것만 있으면 올백 가능! 책상</span>
+              <strong>112,000원 </strong>
+              <div class="box_box">
+                <p>★4.7</p>
+                <button class="cart">🤍</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <p>© 2025 Roomize Inc. | sdh250102@sdh.hs.kr & sdh250306@sdh.hs.kr</p>
+    </footer>
+
+    <script src="./script/js.js"></script>
+    <script src="./script/Roomize_main.js"></script>
+  </body>
+</html>

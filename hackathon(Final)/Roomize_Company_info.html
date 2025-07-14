@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roomize Company</title>
+    <link
+      rel="shortcut icon"
+      href="./img/logo removed- file3.png"
+      type="icon"
+    />
+    <link rel="stylesheet" href="./css/style3.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="Navigation">
+        <div class="menu">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">&#9776;메뉴</button>
+            <ul id="myDropdown" class="dropdown-content">
+              <li><a href="./Roomize_main.html">홈</a></li>
+              <li><a href="./announcement.html">공지사항</a></li>
+              <li><a href="./list.html">문의하기</a></li>
+            </ul>
+          </div>
+          <div class="logo">
+            <img src="./img/logo removed- file3.png" alt="" />
+            <h2>Roomize</h2>
+          </div>
+        </div>
+        <nav>
+          <div class="con">
+            <ul>
+              <li>
+                <a href="./Roomize_Company_info.html"><span>회사정보</span></a>
+              </li>
+              <li>
+                <a href="./items.html"><span>가구</span></a>
+              </li>
+            </ul>
+            <li id="auth-links">
+              <a
+                class="login"
+                href="./login-screen copy/login.html"
+                id="auth-link"
+                ><span>로그인</span></a
+              >
+            </li>
+
+            <!-- Logged-in view -->
+            <li id="profile-section" style="display: none">
+              <img id="profile-pic" src="" alt="Profile Picture" />
+              <span id="user-greeting"></span>
+              <button
+                id="logout-btn"
+                style="
+                  padding: 6px 12px;
+                  font-weight: bold;
+                  border-radius: 5px;
+                  cursor: pointer;
+                "
+              >
+                로그아웃
+              </button>
+            </li>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="about">
+      <h2>회사소개</h2>
+      <p>
+        Roomize는 혁신적인 AI 디자인 서비스를 통해 고객의 상상력을 현실로
+        만들어드립니다. 다양한 프로젝트 경험과 전문가 그룹이 최고의 공간을
+        약속합니다.
+      </p>
+    </section>
+
+    <section class="services">
+      <h2>주요 서비스</h2>
+      <div class="service-cards">
+        <div class="card">
+          <img
+            src="./img/Firefly_똑같은 장면을만들어줘 696727.jpg"
+            alt="디자인 서비스"
+          />
+          <h3>맞춤형 디자인</h3>
+          <p>고객 맞춤형 인테리어 및 가구 디자인 서비스 제공</p>
+        </div>
+        <div class="card">
+          <img
+            src="./img/Firefly_장인이  프리미엄 가구 파란 침대를 만드는 장면  16724.jpg"
+            alt="가구 제작"
+          />
+          <h3>프리미엄 가구 제작</h3>
+          <p>고급 소재를 사용한 프리미엄 맞춤 가구 제작</p>
+        </div>
+        <div class="card">
+          <img
+            src="./img/Firefly_AI로 공간을 시뮬레이션하고 최적의 레이아웃을 제안하는 장면 지도 표면처럼 16724.jpg"
+            alt="Ai Roomize"
+          />
+          <h3>AI Roomize</h3>
+          <p>AI로 공간을 시뮬레이션하고 최적의 레이아웃을 제안</p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>고객 리뷰</h2>
+      <div class="reviews">
+        <div class="review">
+          <p>
+            "Roomize 덕분에 우리 집이 카페처럼 변했어요! 원하는 스타일을 AI로
+            바로 확인할 수 있어서 너무 편리했습니다."
+          </p>
+          <h4>- 김지은, 서울</h4>
+        </div>
+        <div class="review">
+          <p>
+            "맞춤 가구 제작 서비스가 정말 만족스러웠어요. 품질도 좋고 디자인도
+            마음에 들어요."
+          </p>
+          <h4>- 이민수, 부산</h4>
+        </div>
+        <div class="review">
+          <p>
+            "디자인 시안이 빠르게 나와서 이사 일정에 딱 맞게 인테리어를 끝낼 수
+            있었습니다."
+          </p>
+          <h4>- 박수진, 대전</h4>
+        </div>
+        <div class="review">
+          <p>
+            "팀원들이 친절하고 세심하게 상담해줘서 처음 인테리어하는데도 걱정
+            없이 진행했어요."
+          </p>
+          <h4>- 최현우, 인천</h4>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2025 Roomize Inc. | sdh250102@sdh.hs.kr & sdh250306@sdh.hs.kr</p>
+    </footer>
+    <script src="./script/Roomize_main.js"></script>
+  </body>
+</html>
